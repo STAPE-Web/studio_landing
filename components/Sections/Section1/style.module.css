@@ -1,0 +1,94 @@
+.Section {
+    width: 100%;
+    height: calc(100vh - 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.Section .Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.Section .Box h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.Section .Box h1 span {
+    text-decoration-line: underline;
+    color: #A393FF;
+}
+
+.Section .Box p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    width: 650px;
+}
+
+.Background div:nth-child(1) {
+    width: 350px;
+    height: 350px;
+    background: rgba(163, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    left: 0;
+    top: 22%;
+    z-index: -1;
+}
+
+.Background div:nth-child(2) {
+    width: 277px;
+    height: 277px;
+    background: rgba(227, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    right: -80px;
+    top: -190px;
+    z-index: -1;
+}
+
+.Background div:nth-child(3) {
+    width: 143px;
+    height: 143px;
+    background: rgba(227, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+    .Section .Box h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Section .Box p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Section .Box h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}

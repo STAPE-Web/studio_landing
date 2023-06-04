@@ -1,0 +1,23 @@
+.Contacts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    padding: 25px 30px;
+}
+
+.Contacts p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #A393FF;
+}
+
+.Contacts .Icon {
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,102 @@
+.Header {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.Header ul li {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Header ul li:hover {
+    opacity: 0.5;
+}
+
+.Header .Lang {
+    position: relative;
+}
+
+.Header .Lang .Select {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #A393FF;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Header .Lang .Select:hover {
+    opacity: 0.5;
+}
+
+.Header .Lang .Icon {
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+}
+
+.Header .Lang.Active .Icon {
+    transform: rotate(180deg);
+}
+
+.Header .Lang .List {
+    position: absolute;
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    margin-top: 5px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    padding: 5px 0;
+    opacity: 0;
+    transition: 0.5s;
+    margin-left: -20px;
+}
+
+.Header .Lang .List div {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.Header .Lang.Active .List {
+    pointer-events: all;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.Header .Lang.Active .List div:hover {
+    cursor: pointer;
+    background: #A393FF;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .Header ul {
+        display: none;
+    }
+}

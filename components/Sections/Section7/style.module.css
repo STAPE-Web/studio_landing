@@ -1,0 +1,99 @@
+.Section {
+    width: 100%;
+    position: relative;
+    margin-top: 120px;
+}
+
+.Section .Box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Section .Title h2 {
+    color: #484848;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.Section .Title h2 span {
+    color: #A393FF;
+}
+
+.Contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.Section form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    gap: 15px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 30px;
+    margin: 50px auto 0 auto;
+}
+
+
+.Background div:nth-child(1) {
+    width: 350px;
+    height: 350px;
+    background: rgba(163, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: -1;
+}
+
+.Background div:nth-child(2) {
+    width: 350px;
+    height: 350px;
+    background: rgba(227, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    right: 120px;
+    bottom: 100px;
+    z-index: -1;
+}
+
+.Background div:nth-child(3) {
+    width: 203px;
+    height: 203px;
+    background: rgba(227, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    left: 360px;
+    bottom: -140px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1250px) {
+    .Contacts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Contacts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Section form {
+        width: 100%;
+    }
+}

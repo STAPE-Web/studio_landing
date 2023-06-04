@@ -1,0 +1,165 @@
+.Section {
+    width: 100%;
+    position: relative;
+    margin-top: 200px;
+}
+
+.Section .Box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Section .Title h2 {
+    color: #484848;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.Section .Title h2 span {
+    color: #A393FF;
+}
+
+.Section .Box .MiniBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Section .Box .MiniBox h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 730px;
+}
+
+.Section .Box .MiniBox h2 span:nth-child(1) {
+    color: #A393FF;
+}
+
+.Section .Box .MiniBox h2 span:nth-child(2) {
+    text-decoration-line: underline;
+}
+
+.Section .Box .MiniBox .Cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Section .Box .MiniBox .Cards div {
+    padding: 25px 30px;
+    width: 375px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.Section .Box .MiniBox .Cards div:nth-child(1) span:nth-child(1),
+.Section .Box .MiniBox .Cards div:nth-child(2) span {
+    color: #A393FF;
+}
+
+.Section .Box .MiniBox .Cards div:nth-child(1) span:nth-child(2) {
+    text-decoration-line: underline;
+}
+
+.Section .Box .MiniBox .Cards div:nth-child(3) span {
+    color: #E393FF;
+}
+
+.Section .Box .MiniBox .Cards div:nth-child(2) {
+    transform: translateX(-135px);
+}
+
+.Section .Box .MiniBox .Cards div:nth-child(3) {
+    transform: translateX(-280px);
+}
+
+.Background div:nth-child(1) {
+    width: 188px;
+    height: 188px;
+    background: rgba(227, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    left: 150px;
+    bottom: 25px;
+    z-index: -1;
+}
+
+.Background div:nth-child(2) {
+    width: 350px;
+    height: 350px;
+    background: rgba(163, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    right: -50px;
+    bottom: -150px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1350px) {
+    .Section {
+        margin-top: 100px;
+    }
+
+    .Section .Box .MiniBox .Cards div:nth-child(2) {
+        transform: translateX(0);
+    }
+
+    .Section .Box .MiniBox .Cards div:nth-child(3) {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .Section .Box .MiniBox {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .Section .Box .MiniBox .Cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Section .Box .MiniBox h2 {
+        width: 100%;
+    }
+
+    .Section .Box .MiniBox .Cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Section .Box .MiniBox .Cards div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Section .Box .MiniBox h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Section .Box .MiniBox h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}

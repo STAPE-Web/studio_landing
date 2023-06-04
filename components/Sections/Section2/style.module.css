@@ -1,0 +1,69 @@
+.Section {
+    width: 100%;
+    position: relative;
+}
+
+.Section .Box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+.Section .Box h2 {
+    color: #484848;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.Section .Box h2 span {
+    color: #A393FF;
+}
+
+.Section .Box .MiniBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Background div:nth-child(1) {
+    width: 350px;
+    height: 350px;
+    background: rgba(163, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    left: -130px;
+    bottom: -150px;
+    z-index: -1;
+}
+
+.Background div:nth-child(2) {
+    width: 350px;
+    height: 350px;
+    background: rgba(227, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    right: 100px;
+    bottom: -200px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1500px) {
+    .Section .Box .MiniBox {
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .Background div:nth-child(1),
+    .Background div:nth-child(2) {
+        display: none;
+    }
+}

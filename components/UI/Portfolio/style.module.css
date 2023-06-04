@@ -1,0 +1,64 @@
+.Image {
+    width: 100%;
+    border-radius: 15px;
+    user-select: none;
+}
+
+.Portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Portfolio .Bar {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    padding: 25px 30px;
+    user-select: none;
+    margin: -25px auto 0 auto;
+}
+
+.Portfolio .Bar p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Portfolio .Bar .Icon {
+    width: 30px;
+    height: 30px;
+}
+
+.Portfolio .Bar p span,
+.Portfolio .Bar .Icon {
+    color: #A393FF;
+}
+
+.Portfolio.Active .Bar p span,
+.Portfolio.Active .Bar .Icon {
+    color: #E393FF;
+}
+
+@media screen and (max-width: 1400px) {
+    .Image {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Portfolio .Bar {
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+    }
+}

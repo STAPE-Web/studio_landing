@@ -1,0 +1,78 @@
+.Section {
+    width: 100%;
+    position: relative;
+    margin-top: 120px;
+}
+
+.Section .Box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.Section .Title h2 {
+    color: #484848;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.Section .Title h2 span {
+    color: #A393FF;
+}
+
+.Section .Box .MiniBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.Background div:nth-child(1) {
+    width: 350px;
+    height: 350px;
+    background: rgba(163, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    left: -285px;
+    top: 35px;
+    z-index: -1;
+}
+
+.Background div:nth-child(2) {
+    width: 188px;
+    height: 188px;
+    background: rgba(163, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    left: 350px;
+    top: 0;
+    z-index: -1;
+}
+
+.Background div:nth-child(3) {
+    width: 350px;
+    height: 350px;
+    background: rgba(227, 147, 255, 0.3);
+    border-radius: 100%;
+    filter: blur(75px);
+    position: absolute;
+    right: 300px;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1100px) {
+    .Section .Box .MiniBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Section .Box .MiniBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

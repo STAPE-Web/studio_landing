@@ -1,0 +1,30 @@
+.Footer {
+    margin-top: 120px;
+    width: 100%;
+    padding: 0 15px 15px 15px;
+}
+
+.Footer div {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+}
+
+.Footer div p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+@media screen and (max-width: 600px) {
+    .Footer div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

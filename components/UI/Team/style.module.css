@@ -1,0 +1,71 @@
+.Team {
+    position: relative;
+}
+
+.Team .Image {
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    background: linear-gradient(136.95deg, #A393FF 0%, #1E1E1E 100%);
+}
+
+.Team.Active .Image {
+    background: linear-gradient(136.95deg, #E393FF 0%, #1E1E1E 100%);
+}
+
+.Team .Bar {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    padding: 25px 30px;
+    margin-top: -25px;
+    margin-left: 50px;
+}
+
+.Team .Bar p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Team .Bar .Icon {
+    width: 30px;
+    height: 30px;
+}
+
+.Team .Bar p span,
+.Team .Bar .Icon {
+    color: #A393FF;
+}
+
+.Team.Active .Bar p span,
+.Team.Active .Bar .Icon {
+    color: #E393FF;
+}
+
+@media screen and (max-width: 500px) {
+    .Team {
+        width: 100%;
+    }
+
+    .Team .Image {
+        width: 100%;
+        height: auto;
+    }
+
+    .Team .Bar {
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
